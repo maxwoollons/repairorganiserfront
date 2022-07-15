@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+
+}
+
+
+.navbar div {
+  font-size: 29px;  
+  cursor: default;
+}
+
+
+.navbar .navitem:hover {
+  color: rgb(51, 53, 54);  
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}
+
+.container {
+  padding: 20px;
+}
+
+.issue-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #e2e5e7;
+  padding: 20px;
+  box-shadow: #c4c7ca 0px 1px 5px 0px;
+  border-radius: 5px;
+}
+
+.issues-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+
+
+}
+
+.complete-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbtn {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  margin: 10px;
+  background-color: #eaf1ec;
+  border: none;
+  box-shadow: #c2cdc5 0px 1px 5px 0px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+  .navbtn:hover {
+    transition: 0.4s ease-in-out;
+    background-color: rgb(157, 157, 157);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.issuecontainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #f0f3f5;
+  padding: 20px;
+  box-shadow: #c4c7ca 0px 1px 5px 0px;
+  border-radius: 5px;
+
+}
+
+.issuecontainer form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.issuecontainer form input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e2e5e7;
+  box-shadow: #c4c7ca 0px 1px 5px 0px;
+}
+
+.issuecontainer form .submit {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.issuecontainer form .submit:hover {
+  transition: 0.4s ease-in-out;
+  background-color: rgb(157, 157, 157);
+}
+
+.issuecontainer form label {
+  margin-bottom: 20px;
+}
+
+a button {
+  cursor: pointer;
+}
+
+
+.issue-card-due {
+  background-color: rgb(236, 45, 45);
+}
+
+.issue-card-warning {
+  background-color: rgb(255, 255, 0);
+}
+
+.issuefine {
+  background-color: #e2e5e7;
+}
+
+.archivedbtn {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+
+
+}
+
+.archivedtitle{
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #f0f3f5;
+  padding: 20px;
+  box-shadow: #c4c7ca 0px 1px 5px 0px;
+}
+
+
+.homebtndiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+
+}
+.home {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out; 
+}
+
+.home:hover {
+  background-color: rgb(157, 157, 157);
+}
+
+
+.formcontainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: #c4c7ca 0px 1px 5px 0px;
+  border-radius: 5px;
+ 
+}
+
+
+.formcontainer form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+
+.submitbtn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.logintitle {
+  text-align: center;
+  color: red;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+form label {
+  margin-bottom: 20px;
+
+}
+
+form input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e2e5e7;
+  box-shadow: #c4c7ca 0px 1px 5px 0px;
+  
+}
