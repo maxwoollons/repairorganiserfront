@@ -8,6 +8,7 @@ const addissue = () => {
         fetch('https://api.jbrepair.xyz/api/login',
         {
             credentials: 'include'
+            
         }).then(res => res.json())
         .then(data => {
             console.log(data)
@@ -28,9 +29,11 @@ const addissue = () => {
 
 
 
-        fetch('https://api.jbrepair.xyz/api/repairs/add',
-        {
+        fetch('https://restapimax.herokuapp.com/api/repairs/add',
+        {   
+            credentials: 'include',
             method: 'POST',
+            sameOrigin: false,
             headers: {
                 'Content-Type': 'application/json'
                 },

@@ -11,7 +11,7 @@ function issues() {
 
 
   function fetchIssues() {
-    fetch("https://restapimax.herokuapp.com/api/repairs/all",
+    fetch("https://api.jbrepair.xyz/api/repairs/all",
     {
         credentials: 'include'
     })
@@ -29,7 +29,7 @@ function issues() {
 
   useEffect(() => {
       //axios call to check if user is logged in
-      axios.get('https://restapimax.herokuapp.com/api/login', {withCredentials: true})
+      axios.get('https://api.jbrepair.xyz/api/login', {withCredentials: true})
       .then(res => {
         console.log(res.data.username)
           if (res.data.username) {
@@ -84,7 +84,7 @@ function issues() {
 
       if(window.confirm("Are you sure you have completed this issue?")){
 
-      fetch(`https://restapimax.herokuapp.com/api/repairs/archive/${id}`, {
+      fetch(`https://api.jbrepair.xyz/api/repairs/archive/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'
@@ -131,7 +131,7 @@ function issues() {
               return (
                 <div className='issue-card' key={issue.id}>
                     <div className='issue-card-header issue-card-due'>
-                        <h3><span className='issue-text'>{issue.idrepairs}: {issue.note} </span><br/><small>- by {issue.Date}</small></h3>
+                        <h3><span className='issue-text'>{issue.idrepairs}: {issue.note} </span><br/><small>- by {issue.Date} -- TDC {issue.tdc}</small></h3>
                         <button className='complete-btn'  onClick={() => deleteIssue(issue.id)}>Complete</button>
                      
                         </div>
@@ -142,7 +142,7 @@ function issues() {
               return (
                 <div className='issue-card' key={issue.id}>
                     <div className='issue-card-header issue-card-warning'>
-                        <h3><span className='issue-text'>{issue.idrepairs}: {issue.note} </span><br/><small>- by {issue.Date}</small></h3>
+                        <h3><span className='issue-text'>{issue.idrepairs}: {issue.note} </span><br/><small>- by {issue.Date} -- TDC {issue.tdc}</small></h3>
                         <button className='complete-btn' onClick={() => deleteIssue(issue.id)}>Complete</button>
                         </div>
                         
@@ -153,7 +153,7 @@ function issues() {
               return (
                 <div className='issue-card' key={issue.id}>
                     <div className='issue-card-header issuefine' >
-                        <h3><span className='issue-text'>{issue.idrepairs}: {issue.note} </span><br/><small>- by {issue.Date}</small></h3>
+                        <h3><span className='issue-text'>{issue.idrepairs}: {issue.note} </span><br/><small>- by {issue.Date} -- TDC {issue.tdc}</small></h3>
                         <button className='complete-btn' onClick={() => deleteIssue(issue.id)}>Complete</button>
                         </div>
                 </div>
@@ -176,7 +176,7 @@ function issues() {
         password: document.getElementById('password').value
       }
       //axios post request to login with cors headers
-      axios.post('https://restapimax.herokuapp.com/api/login', details,{withCredentials: true})
+      axios.post('https://api.jbrepair.xyz/api/login', details,{withCredentials: true})
       
 
       .then(res => {
