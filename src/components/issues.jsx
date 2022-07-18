@@ -11,7 +11,7 @@ function issues() {
 
 
   function fetchIssues() {
-    fetch("http://api.jbrepair.xyz:8000/api/repairs/all",
+    fetch("https://restapimax.herokuapp.com/api/repairs/all",
     {
         credentials: 'include'
     })
@@ -29,7 +29,7 @@ function issues() {
 
   useEffect(() => {
       //axios call to check if user is logged in
-      axios.get('http://api.jbrepair.xyz:8000/api/login', {withCredentials: true})
+      axios.get('https://restapimax.herokuapp.com/api/login', {withCredentials: true})
       .then(res => {
         console.log(res.data.username)
           if (res.data.username) {
@@ -84,7 +84,7 @@ function issues() {
 
       if(window.confirm("Are you sure you have completed this issue?")){
 
-      fetch(`http://api.jbrepair.xyz:8000/api/repairs/archive/${id}`, {
+      fetch(`https://restapimax.herokuapp.com/api/repairs/archive/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'
@@ -176,7 +176,7 @@ function issues() {
         password: document.getElementById('password').value
       }
       //axios post request to login with cors headers
-      axios.post('http://api.jbrepair.xyz:8000/api/login', details,{withCredentials: true})
+      axios.post('https://restapimax.herokuapp.com/api/login', details,{withCredentials: true})
       
 
       .then(res => {

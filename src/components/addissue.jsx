@@ -5,7 +5,7 @@ import { useEffect } from 'react'
 
 const addissue = () => {
     useEffect(() => {
-        fetch('http://api.jbrepair.xyz:8000/api/login',
+        fetch('https://restapimax.herokuapp.com/api/login',
         {
             credentials: 'include'
         }).then(res => res.json())
@@ -28,7 +28,7 @@ const addissue = () => {
 
 
 
-        fetch('http://api.jbrepair.xyz:8000/api/repairs/add',
+        fetch('https://restapimax.herokuapp.com/api/repairs/add',
         {
             method: 'POST',
             headers: {

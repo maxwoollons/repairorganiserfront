@@ -8,7 +8,7 @@ import Navbar from './navbar';
 function Shipping() {
   const [count, setCount] = useState(0)
   useEffect(() => {
-    fetch('http://api.jbrepair.xyz:8000/api/login',
+    fetch('https://restapimax.herokuapp.com/api/login',
     {
         credentials: 'include'
     }).then(res => res.json())
