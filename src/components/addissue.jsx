@@ -5,7 +5,7 @@ import { useEffect } from 'react'
 
 const addissue = () => {
     useEffect(() => {
-        fetch('https://restapimax.herokuapp.com/api/login',
+        fetch('https://api.jbrepair.xyz/api/login',
         {
             credentials: 'include'
         }).then(res => res.json())
@@ -28,7 +28,7 @@ const addissue = () => {
 
 
 
-        fetch('https://restapimax.herokuapp.com/api/repairs/add',
+        fetch('https://api.jbrepair.xyz/api/repairs/add',
         {
             method: 'POST',
             headers: {
@@ -45,7 +45,7 @@ const addissue = () => {
                 }).then(res => res.json())
                 .then(data => {
                     window.alert("Issue added")
-                    location.href = "/repairorganiser/"
+                    location.href = "/"
                 }
                 ).catch(err => {
                     window.alert("Error adding issue")

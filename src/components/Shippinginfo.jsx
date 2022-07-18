@@ -8,7 +8,7 @@ function shippinginfo() {
     <div className='issues'>
       <div className='issues-header'>
         <a href='/'><button className='navbtn'>Issues</button></a>
-        <a href='/shipping'><button className='navbtn'>Dispatch List</button></a>
+        <a href='/shipping'><button className='navbtn'>Dispatch</button></a>
     </div>
     <h1>Im adding this soon hush storeroom kittens</h1>
    

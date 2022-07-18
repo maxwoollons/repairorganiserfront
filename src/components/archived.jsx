@@ -7,7 +7,7 @@ const Archived = () => {
 
      useEffect(() => {
         
-        fetch('https://restapimax.herokuapp.com/api/login',
+        fetch('https://api.jbrepair.xyz/api/login',
         {
             credentials: 'include'
         }).then(res => res.json())
@@ -24,7 +24,7 @@ const Archived = () => {
     }, [])
     const [items, setItems] = useState([]);
     const fetchItems = async () => {
-        const data = await fetch('https://restapimax.herokuapp.com/api/repairs/archived');
+        const data = await fetch('https://api.jbrepair.xyz/api/repairs/archived');
         const items = await data.json();
         setItems(items);
         console.log(items);
